@@ -1,0 +1,26 @@
+COMMENTI SUL FW PER BANCHETTI PMDC-BLDC PER CONTROLLO MOTORE DC FB
+
+- Inverter utilizzato DRV8301
+- Motore utilizzato prima versione
+- Tensione massima 10V, corrente massima 4A
+- Parametri motore stessi del libro 
+- frequenza di switching 30kHz
+
+
+- guadagno ADC 8e-3
+- banda passante velocità wcI/200
+- Sample time ADC1e-3, sample time eQEP Tw
+- pulizia dello script Simulink, ciò che rimane commentato crea variabili nel codice C generato
+- wmax 400rpm
+- Abilitare GPIO50
+- utilizzare configurazione bipolar 
+- ePWM_1(PhA) -> no enable swap, Enable ePWM1A, NO Enable ePWM1B, Inverted version, Enable ADC start of conversion for module A
+- ePWM_2(PhB) -> no enable swap, Enable ePWM2A, NO Enable ePWM2B, Inverted version, NO Enable ADC start of conversion for module A
+
+La struttura meccanica non permette il funzionamento del controllo nella maniera ottimale, in particolare le staffe
+sono molto flessibili e vengono introdotte delle vibrazioni che causano poca stabilità nei transitori
+inoltre passati i 200 rpm le viti dei giunti spesso saltano via
+il controllo in FB funziona bene per velocità positive, meno bene per velocità negative
+
+- Va tolto il jumper dell'enable
+- Utilizzare eQEP2 (ma a me funziona bene anche l'eQEP1)

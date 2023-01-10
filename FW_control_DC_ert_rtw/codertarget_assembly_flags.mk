@@ -1,0 +1,19 @@
+ASFLAGS_ADDITIONAL = --float_support=fpu32
+CCSINSTALLDIR = C:/PROGRA~3/MATLAB/SupportPackages/3P.instrset/tic28xcodegentools.instrset/ti-cgt-c2000_20.2.1.LTS
+CCSSCRIPTINGDIR = C:/ti/ccs1100/ccs/ccs_base/scripting
+CONTROLSUITEINSTALLDIR = C:/ti/controlSUITE/
+C2000WAREINSTALLDIR = C:/ti/c2000/C2000Ware_4_00_00_00
+CCSARMINSTALLDIR = C:/PROGRA~3/MATLAB/SupportPackages/3P.instrset/tiarmcodegentools.instrset/ti-cgt-arm_20.2.1.LTS
+DSP28M35x_INSTALLDIR = C:/ti/controlSUITE/device_support/f28m35x/v208
+DSP28M36x_INSTALLDIR = C:/ti/controlSUITE/device_support/f28m36x/v208
+DSP2834x_INSTALLDIR = C:/ti/controlSUITE/device_support/c2834x/v112
+DSP2802x_INSTALLDIR = C:/ti/controlSUITE/device_support/f2802x/v230
+DSP2803x_INSTALLDIR = C:/ti/controlSUITE/device_support/f2803x/v130
+DSP2805x_INSTALLDIR = C:/ti/controlSUITE/device_support/f2805x/v104
+DSP2806x_INSTALLDIR = C:/ti/controlSUITE/device_support/f2806x/v151
+CLAMATHLIB_INSTALLDIR = C:/ti/controlSUITE/libs/math/CLAmath/v4_00_01_00
+DSP2804x_INSTALLDIR = C:/tidcs/c28/DSP2804x/v130/
+TARGET_LOAD_CMD = 
+TARGET_LOAD_CMD_ARGS = 
+TARGET_PKG_INSTALLDIR = C:/PROGRA~3/MATLAB/SupportPackages/R2022b/toolbox/target/supportpackages/tic2000
+STACK_SIZE = 512
